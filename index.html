@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css" />
+    <title>My BookList App</title>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <h1 class="display-4 text-center">
+        <i class="fas fa-book-reader text-info"></i>
+        My <span class="text-info">Book</span>List
+      </h1>
+
+      <!-- Form -->
+      <form action="/" method="POST" id="book-form">
+        <div class="form-group">
+          <label for="title" >Title</label>
+          <input type="text" name="title" id="title" class="form-control border-rad" />
+        </div>
+
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" name="author" id="author" class="form-control border-rad" />
+        </div>
+
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input type="text" name="price" id="price" class="form-control border-rad" />
+        </div>
+
+        <div class="form-group">
+          <label for="isbn">ISBN</label>
+          <input type="text" name="isbn" id="isbn" class="form-control border-rad" placeholder="123-45-67890-12-1" />
+        </div>
+
+        <div class="button text-center mt-4">
+          <button type="submit" class="btn btn-outline-info btn-block border-rad" id="add-book">
+            <span>Add</span>
+          </button>
+        </div>
+      </form>
+      <table class="table table-stripped mt-5">
+        <thead>
+          <tr class="">
+            <th>Title</th>
+            <th>Author</th>
+            <th>Price</th>
+            <th>ISBN</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="book-list">
+            
+        </tbody>
+      </table>
+    </div>
+
+    <footer class="sticky">
+      <h5 class="text-center">
+        &copy Code With Charchil 2021
+      </h5>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
